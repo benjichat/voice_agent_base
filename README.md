@@ -28,7 +28,6 @@ OPENAI_API_KEY=your_openai_api_key
 
 # ElevenLabs API Key for Text-to-Speech
 ELEVENLABS_API_KEY=your_elevenlabs_api_key
-ELEVENLABS_VOICE_ID=21m00Tcm4TlvDq8ikWAM  # Optional: Default to Rachel voice
 
 # Tavily API Key for web search
 TAVILY_API_KEY=your_tavily_api_key
@@ -55,7 +54,6 @@ The agent has access to the following tools:
 - `apps/web/`: React-based web interface
 - `apps/agents/`: LangChain agent implementation
   - `src/react-agent/`: Core agent logic
-  - `tts-outputs/`: Generated audio files
 
 ## Development
 
@@ -63,7 +61,3 @@ The agent has access to the following tools:
 - `pnpm build`: Build the application
 - `pnpm lint`: Run linting
 - `pnpm format`: Format code
-
-## License
-
-Private - All rights reserved
