@@ -1,0 +1,49 @@
+{
+  "name": "agents",
+  "author": "Your Name",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx @langchain/langgraph-cli dev --port 2024 --config ../../langgraph.json",
+    "build": "turbo build:internal --filter=agents",
+    "build:internal": "pnpm run clean && tsc",
+    "clean": "rm -rf ./dist .turbo || true",
+    "format": "prettier --config .prettierrc --write \"src\"",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.1.0",
+    "@langchain/anthropic": "^0.3.15",
+    "@langchain/community": "^0.3.35",
+    "@langchain/core": "^0.3.42",
+    "@langchain/langgraph": "^0.2.55",
+    "@langchain/langgraph-checkpoint": "^0.0.16",
+    "@langchain/tavily": "^0.1.2",
+    "dotenv": "^16.5.0",
+    "langchain": "^0.3.19",
+    "openai": "^4.103.0",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.22.0",
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^20",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-no-instanceof": "^1.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.14.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "turbo": "latest",
+    "typescript": "^5"
+  }
+}
