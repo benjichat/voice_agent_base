@@ -61,3 +61,7 @@ The agent has access to the following tools:
 - `pnpm build`: Build the application
 - `pnpm lint`: Run linting
 - `pnpm format`: Format code
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/image?repos=benjichat/voice_agent_base&type=date&legend=top-left)](https://www.star-history.com/?repos=benjichat%2Fvoice_agent_base&type=date&legend=top-left)
